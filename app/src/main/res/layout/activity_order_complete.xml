@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradientcolorbg"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.binusezyfoody.OrderCompleteActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cornershape">
+
+    </View>
+
+    <!--Button
+        android:id="@+id/btn_utama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Menu Utama"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /-->
+
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/btn_utama"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:shape="ring"
+        app:cardCornerRadius="30dp"
+        android:background="@color/colorPrimaryLight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_home_black_24dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Menu Utama"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Harga : "
+        android:textSize="20dp"
+        android:textColor="#000"
+        tools:layout_editor_absoluteY="37dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="130dp"
+        android:id="@+id/textView2"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Order Complete"
+        android:textSize="20dp"
+        android:textColor="#000"
+        tools:layout_editor_absoluteY="37dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="140dp"
+        android:textSize="20dp"
+        android:id="@+id/total_harga1" />
+
+    <LinearLayout
+        android:id="@+id/linear_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="180dp">
+
+    </LinearLayout>
+
+
+</RelativeLayout>
